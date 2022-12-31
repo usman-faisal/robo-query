@@ -1,3 +1,4 @@
+/* initial reset */
 body {
   padding: 0;
   margin: 0;
@@ -7,21 +8,31 @@ body {
   background-color: #2323;
   background-color: white;
 }
+
+/* initial font size of website */
+/* ye humne isliye kiya takay kisi bhi size pe agr humare elements break honay lagein to responsive krne k liye font size 50% krdeinge jiski waja se saray images and gifs waghera ka bhi size adjust hojayega kiyunkay unki sizing humne rem mein ki hai */
+/* rem: root-elements-fontsize */
 html {
   font-size: 62.5%;
 }
+
+/* styling of nav bar */
 .nav {
   background-color: white;
-  display: flex;
-  justify-content: space-between;
+  display: flex;           /*to align the navbar elements in a row*/
+  justify-content: space-between;  /*to add space between the navbar elements(divides equally)*/
   align-items: center;
   padding: 2rem 4.8rem;
   box-shadow: 0 0 1rem 2rem rgba(0, 0, 0, 0.1);
 }
+
+/* list items of navbar(home and robofix) */
 .nav-list {
-  display: flex;
+  display: flex;   /*to align the list in a single row*/ 
   list-style-type: none;
 }
+
+/* to style both initial(link) stage and final(visited) stage of navbar links */
 .nav-link:link,
 .nav-link:visited {
   color: black;
@@ -29,16 +40,20 @@ html {
   text-decoration: none;
   transition: all 0.2s;
 }
+
+/* sizing the logo image  */
 .logo-img {
   width: 20rem;
 }
 .main {
-  max-width: 140rem;
-  margin: 0 auto;
+  max-width: 140rem; /*width 140 se km ho skti hai but ziada nhi ho skti*/
+  margin: 0 auto; /*Top and140 bottom zero and with auto every element will be adjusted in centre*/
 }
+
+/* designing the div/container  */
 .container {
-  display: grid;
-  grid-template-columns: 1fr max-content;
+  display: grid;  /*to display the items of both div/containers in rows*/
+  grid-template-columns: 1fr max-content; /*giving the max space required for gif box and remaining as a single fraction to the text*/
   padding: 2rem;
   margin-left: 4rem;
   gap: 5rem;
@@ -50,20 +65,27 @@ html {
   word-spacing: 0.5rem;
   line-height: 3rem;
 }
+
+/* designing gif box  */
 .gif-box {
-  justify-self: center;
-  align-self: center;
-  transition: all 0.2s;
+  justify-self: center;  /*horizontally justifies itself to centre*/
+  align-self: center;   /*vertically justifies itself to centre*/
+  transition: all 0.2s; /*setting the timing of the transition*/
 }
+
+/* adding hover effects to the gif box  */
 .gif-box:hover {
   transform: scale(1.1);
 }
 
+/* designing the embedded gifs  */
 .gif {
-  pointer-events: none;
+  pointer-events: none; 
   border: none;
   width: 100%;
 }
+
+/* active link of the nav-bar will have heavy weight as compared to the in-active one  */
 .active {
   font-weight: 600;
 }
