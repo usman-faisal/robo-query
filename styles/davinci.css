@@ -1,0 +1,102 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  font-size: 2rem;
+  background-color: #2323;
+  background-color: white;
+}
+html {
+  font-size: 62.5%;
+}
+.nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4.8rem;
+  box-shadow: 0 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+.nav-list {
+  display: flex;
+  list-style-type: none;
+}
+.nav-link:link,
+.nav-link:visited {
+  color: black;
+  padding: 2rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.logo-img {
+  width: 20rem;
+}
+
+/** main section */
+.main {
+  max-width: min-content;
+  margin: 10rem auto;
+}
+.form {
+  display: flex;
+  gap: 1rem;
+}
+.input {
+  font-size: 2.8rem;
+  padding: 2rem;
+  border: none;
+  border: 1px solid #777;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.input:focus {
+  outline: none;
+  font-size: 3rem;
+}
+.btn {
+  padding: 2rem;
+  background-color: rgb(50, 48, 48);
+  color: white;
+  border-radius: 5px;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn:hover {
+  transform: scale(1.1);
+  background-color: black;
+}
+.bg-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  max-width: 50rem;
+  transition: all 1s;
+  opacity: 0.3;
+}
+.load-result .bg-img {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.loading-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  max-width: 50rem;
+  transition: all 0.2s;
+  opacity: 0;
+  transition: all 1s;
+  visibility: hidden;
+  pointer-events: none;
+}
+.load-result .loading-img {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}

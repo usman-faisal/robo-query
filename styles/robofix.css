@@ -1,0 +1,143 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  font-size: 2rem;
+  background-color: #2323;
+  background-color: white;
+}
+html {
+  font-size: 62.5%;
+}
+.nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4.8rem;
+  box-shadow: 0 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+.nav-list {
+  display: flex;
+  list-style-type: none;
+}
+.nav-link:link,
+.nav-link:visited {
+  color: black;
+  padding: 2rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.logo-img {
+  width: 20rem;
+}
+.main {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  padding: 2rem;
+  gap: 5rem;
+  animation: slideIn 1s ease-in;
+}
+.main-heading {
+  letter-spacing: -0.2rem;
+  text-shadow: 0 0 5rem 5rem rgba(0, 0, 0, 0.2);
+}
+.main-text {
+  word-spacing: 0.5rem;
+  line-height: 3rem;
+}
+.gif-box {
+  justify-self: center;
+  align-self: center;
+  transition: all 0.2s;
+}
+
+.gif {
+  pointer-events: none;
+  border: none;
+  width: 100%;
+}
+
+.main-list {
+  padding: 0;
+}
+.feature-gif {
+  pointer-events: none;
+  border: 10px;
+  width: 36rem;
+  height: max-content;
+}
+.feature-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  margin: 0 auto;
+  column-gap: 10rem;
+  margin-top: 5rem;
+}
+.feature-card {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.702);
+  padding: 2rem;
+  border-radius: 10px;
+  transition: all 0.6s;
+  cursor: pointer;
+}
+.feature-card:hover {
+  transform: scale(1.1) rotate(3deg);
+}
+.feature-img {
+  width: 24rem;
+}
+.color-green {
+  color: #788da3;
+}
+.heading-secondary {
+  font-size: 3.8rem;
+  margin-bottom: 0;
+}
+.feature-text {
+  margin-top: 0;
+}
+.color-green-light {
+  color: #a6b0c4;
+}
+
+.color-light-blue {
+  color: #b4cfef;
+}
+.color-blue {
+  color: #10aafb;
+}
+.robofix-gif {
+  width: 40rem;
+  transition: all 0.2s;
+}
+.robofix-gif:hover {
+  transform: scale(1.1);
+}
+.mg-btm {
+  margin-bottom: 2rem;
+}
+.active {
+  font-weight: 600;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translate(-100%);
+    opacity: 0;
+  }
+  80% {
+    transform: translate(5%);
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
