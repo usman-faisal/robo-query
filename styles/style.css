@@ -40,7 +40,7 @@ html {
   display: grid;
   grid-template-columns: 1fr max-content;
   padding: 2rem;
-
+  margin-left: 4rem;
   gap: 5rem;
 }
 .main-heading {
