@@ -19,8 +19,8 @@ html {
 /* styling of nav bar */
 .nav {
   background-color: white;
-  display: flex;           /*to align the navbar elements in a row*/
-  justify-content: space-between;  /*to add space between the navbar elements(divides equally)*/
+  display: flex; /*to align the navbar elements in a row*/
+  justify-content: space-between; /*to add space between the navbar elements(divides equally)*/
   align-items: center;
   padding: 2rem 4.8rem;
   box-shadow: 0 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -28,7 +28,7 @@ html {
 
 /* list items of navbar(home and robofix) */
 .nav-list {
-  display: flex;   /*to align the list in a single row*/ 
+  display: flex; /*to align the list in a single row*/
   list-style-type: none;
 }
 
@@ -52,7 +52,7 @@ html {
 
 /* designing the div/container  */
 .container {
-  display: grid;  /*to display the items of both div/containers in rows*/
+  display: grid; /*to display the items of both div/containers in rows*/
   grid-template-columns: 1fr max-content; /*giving the max space required for gif box and remaining as a single fraction to the text*/
   padding: 2rem;
   margin-left: 4rem;
@@ -68,8 +68,8 @@ html {
 
 /* designing gif box  */
 .gif-box {
-  justify-self: center;  /*horizontally justifies itself to centre*/
-  align-self: center;   /*vertically justifies itself to centre*/
+  justify-self: center; /*horizontally justifies itself to centre*/
+  align-self: center; /*vertically justifies itself to centre*/
   transition: all 0.2s; /*setting the timing of the transition*/
 }
 
@@ -80,7 +80,7 @@ html {
 
 /* designing the embedded gifs  */
 .gif {
-  pointer-events: none; 
+  pointer-events: none;
   border: none;
   width: 100%;
 }
